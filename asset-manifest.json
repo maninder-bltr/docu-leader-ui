@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/docu-leader-ui/static/css/main.101136d3.css",
+    "main.js": "/docu-leader-ui/static/js/main.50f87b5a.js",
+    "index.html": "/docu-leader-ui/index.html",
+    "main.101136d3.css.map": "/docu-leader-ui/static/css/main.101136d3.css.map",
+    "main.50f87b5a.js.map": "/docu-leader-ui/static/js/main.50f87b5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.101136d3.css",
+    "static/js/main.50f87b5a.js"
+  ]
+}
