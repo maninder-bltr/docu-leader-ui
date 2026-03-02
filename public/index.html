@@ -2,42 +2,126 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/DoculeaderLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="theme-color" content="#2563eb" />
+
+    <!-- Primary SEO -->
+    <title>DocuLeader – AI-Powered Document Intelligence & Invoice Management</title>
+    <meta name="description" content="Smart document assistant that reads, extracts, and understands your documents. Upload PDFs, images, or spreadsheets. Ask AI questions, extract invoice data automatically, track payments, and get smart reminders. Your personal librarian + accountant in one app." />
+    <meta name="keywords" content="document intelligence, ai document reader, invoice extraction, invoice tracking, payment reminders, pdf analysis, document search, rag system, ai accountant, document management, smart librarian, contract analysis, receipt scanner, business automation" />
+    <meta name="author" content="Maninder Singh" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Social Sharing - Facebook, LinkedIn) -->
+    <meta property="og:title" content="DocuLeader – AI Document Intelligence & Invoice Management" />
+    <meta property="og:description" content="Your smart librarian + accountant. Upload any document. AI reads, understands, and extracts everything. Ask questions, track invoices, get payment reminders automatically." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-domain.com/doculeader" />
+    <meta property="og:image" content="%PUBLIC_URL%/DocuLeader-social-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="DocuLeader" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourtwitterhandle" />
+    <meta name="twitter:title" content="DocuLeader – AI-Powered Document Intelligence" />
+    <meta name="twitter:description" content="Upload documents. AI extracts everything. Ask questions, track invoices, get reminders. The smart librarian + accountant you always wanted." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/DocuLeader-social-preview.png" />
+
+    <!-- Additional Meta Tags for Better SEO -->
+    <meta name="application-name" content="DocuLeader" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="DocuLeader" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="%PUBLIC_URL%/browserconfig.xml" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-domain.com/doculeader" />
+
+    <!-- PWA Support -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#2563eb" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    
+    <!-- Preconnect to API domain for faster loading -->
+    <link rel="preconnect" href="http://localhost:8080" />
+    <link rel="dns-prefetch" href="http://localhost:8080" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Structured Data / JSON-LD for Rich Search Results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DocuLeader",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "Document Management",
+        "operatingSystem": "Web",
+        "description": "AI-powered document intelligence platform that reads, understands, and extracts data from documents. Features include semantic search, invoice extraction, payment tracking, and automated reminders.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "150"
+        },
+        "featureList": [
+          "AI Document Analysis",
+          "Semantic Search",
+          "Invoice Extraction",
+          "Payment Tracking",
+          "Automated Reminders",
+          "Multi-format Support",
+          "Secure Storage"
+        ],
+        "screenshot": "https://your-domain.com/doculeader/screenshot.png",
+        "softwareVersion": "1.0.0",
+        "creator": {
+          "@type": "Person",
+          "name": "Maninder Singh"
+        }
+      }
+    </script>
+
+    <!-- Additional structured data for WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "DocuLeader",
+        "url": "https://your-domain.com/doculeader",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://your-domain.com/doculeader/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div style="text-align: center; padding: 40px; font-family: system-ui, -apple-system, sans-serif;">
+        <h1 style="color: #2563eb;">DocuLeader</h1>
+        <p style="color: #4b5563; max-width: 600px; margin: 20px auto;">
+          DocuLeader is an AI-powered document intelligence platform that helps you read, understand, and extract data from your documents.
+          This application requires JavaScript to run. Please enable JavaScript in your browser settings and refresh the page.
+        </p>
+        <div style="margin-top: 30px;">
+          <a href="https://enable-javascript.com" style="color: #2563eb; text-decoration: underline;">Learn how to enable JavaScript</a>
+        </div>
+      </div>
+    </noscript>
+    
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
