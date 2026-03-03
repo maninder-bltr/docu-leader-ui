@@ -3,6 +3,7 @@
 ## 📋 Overview
 
 Docu-Leader is an AI-powered document intelligence platform that combines the capabilities of a smart librarian and an accountant into one seamless interface. The frontend application provides an intuitive user interface for uploading documents, querying information, and tracking invoices with the power of AI.
+URL: https://maninder-bltr.github.io/docu-leader-ui/
 
 ### 🎯 Purpose
 
