@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/DoculeaderLogo.png';
 
 const Navbar = () => {
   const { user, logout, getGreetingName } = useAuth();
@@ -33,12 +34,12 @@ const Navbar = () => {
           gap: '8px',
           textDecoration: 'none'
         }}>
-          <img 
-            src="/DoculeaderLogo.png" 
-            alt="DocuLeader Logo" 
+          <img
+            src={logo}
+            alt="DocuLeader Logo"
             style={{
-              width: '32px',
-              height: '32px',
+              width: '35px',
+              height: '35px',
               objectFit: 'contain'
             }}
           />

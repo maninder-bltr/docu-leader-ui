@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/DoculeaderLogo.png';
 
 const Landing = () => {
   const { user } = useAuth();
@@ -61,9 +62,9 @@ const Landing = () => {
             marginBottom: '20px',
             gap: '12px'
           }}>
-            <img 
-              src="/DoculeaderLogo.png" 
-              alt="DocuLeader Logo" 
+            <img
+              src={logo}
+              alt="DocuLeader Logo"
               style={{
                 width: '48px',
                 height: '48px',
@@ -79,7 +80,7 @@ const Landing = () => {
               Docu-Leader
             </h1>
           </div>
-          
+
           <p style={{
             fontSize: '18px',
             color: '#4b5563',
@@ -87,10 +88,10 @@ const Landing = () => {
             margin: '0 auto 32px',
             lineHeight: '1.6'
           }}>
-            Upload documents or invoices. Docu-Leader AI reads, extracts, summarizes, 
+            Upload documents or invoices. Docu-Leader AI reads, extracts, summarizes,
             and tracks everything for you.
           </p>
-          
+
           {/* Conditional CTA Button */}
           {!user ? (
             <Link to="/signup" className="btn btn-primary" style={{ fontSize: '16px', padding: '12px 32px' }}>

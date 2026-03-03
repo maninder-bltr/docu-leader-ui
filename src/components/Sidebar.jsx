@@ -1,6 +1,7 @@
 // Sidebar.jsx:
 import { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/DoculeaderLogo.png';
 
 const Sidebar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -123,15 +124,15 @@ const Sidebar = () => {
             justifyContent: 'center',
             fontSize: '20px',
           }}>
-            <img 
-            src="/DoculeaderLogo.png" 
-            alt="DocuLeader Logo" 
-            style={{
-              width: '32px',
-              height: '32px',
-              objectFit: 'contain'
-            }}
-          />
+            <img
+              src={logo}
+              alt="DocuLeader Logo"
+              style={{
+                width: '32px',
+                height: '32px',
+                objectFit: 'contain'
+              }}
+            />
           </div>
 
           <span style={{
@@ -181,7 +182,7 @@ const Sidebar = () => {
                 }
               }}
             >
-              <span style={{ 
+              <span style={{
                 fontSize: '18px',
                 filter: 'grayscale(0.2)',
               }}>
